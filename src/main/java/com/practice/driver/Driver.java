@@ -1,15 +1,12 @@
 package com.practice.driver;
 
-import java.io.IOException;
 import java.util.Objects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.practice.constants.FrameworkConstants;
 import com.practice.enums.ConfigProperties;
 import com.practice.utils.JsonUtils;
-import com.practice.utils.PropertyUtils;
 
 public final class Driver {
 
@@ -17,7 +14,7 @@ public final class Driver {
 
 	}
 
-	public static void initDriver() throws Exception {
+	public static void initDriver(){
 
 		if (Objects.isNull(DriverManager.getDriver())) {
 

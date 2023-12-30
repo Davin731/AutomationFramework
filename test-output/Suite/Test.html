@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 28 12:20:54 EST 2023</td>
+<td>Started on:</td><td>Fri Dec 29 20:48:28 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29490 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1829 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,42 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.practice.test.OrangeHRMTests.LoginLogoutTest()'><b>LoginLogoutTest</b><br>Test class: com.practice.test.OrangeHRMTests<br>Parameters: Admin2, admin456</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;oxd-userdropdown-tab&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\31dav\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54742/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 07bf10a1690e92fb45847832e580312b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.practice.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:23)
-	at com.practice.pages.BasePage.click(BasePage.java:19)
-	at com.practice.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:19)
-	at com.practice.test.OrangeHRMTests.LoginLogoutTest(OrangeHRMTests.java:20)
+<td title='com.practice.test.OrangeHRMTests.setUp()'><b>setUp</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1796540273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1796540273'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;oxd-userdropdown-tab&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\31dav\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54742/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 07bf10a1690e92fb45847832e580312b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.practice.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:23)
-	at com.practice.pages.BasePage.click(BasePage.java:19)
-	at com.practice.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:19)
-	at com.practice.test.OrangeHRMTests.LoginLogoutTest(OrangeHRMTests.java:20)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace109704895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace109704895'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
@@ -121,46 +110,38 @@ Session ID: 07bf10a1690e92fb45847832e580312b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
 </pre></div></td>
-<td>11</td>
-<td>com.practice.test.OrangeHRMTests@77847718</td></tr>
+<td>1</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
 <tr>
-<td title='com.practice.test.OrangeHRMTests.LoginLogoutTest()'><b>LoginLogoutTest</b><br>Test class: com.practice.test.OrangeHRMTests<br>Parameters: Admin2, admin456</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;oxd-userdropdown-tab&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\31dav\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54666}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54666/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 297f770e28a5d21549478943688e8f70
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.practice.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:23)
-	at com.practice.pages.BasePage.click(BasePage.java:19)
-	at com.practice.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:19)
-	at com.practice.test.OrangeHRMTests.LoginLogoutTest(OrangeHRMTests.java:20)
+<td title='com.practice.test.OrangeHRMTests.setUp()'><b>setUp</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td><div><pre>java.lang.ExceptionInInitializerError
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace262746355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace262746355'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;oxd-userdropdown-tab&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\31dav\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54666}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54666/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 297f770e28a5d21549478943688e8f70
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.practice.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:23)
-	at com.practice.pages.BasePage.click(BasePage.java:19)
-	at com.practice.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:19)
-	at com.practice.test.OrangeHRMTests.LoginLogoutTest(OrangeHRMTests.java:20)
+Caused by: java.lang.RuntimeException
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace348478553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace348478553'><pre>java.lang.ExceptionInInitializerError
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
 	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
@@ -170,12 +151,54 @@ Session ID: 297f770e28a5d21549478943688e8f70
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.RuntimeException
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
 </pre></div></td>
-<td>11</td>
-<td>com.practice.test.OrangeHRMTests@77847718</td></tr>
+<td>1</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.tearDown()'><b>tearDown</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.setUp()'><b>setUp</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.setUp()'><b>setUp</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.tearDown()'><b>tearDown</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.tearDown()'><b>tearDown</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.tearDown()'><b>tearDown</b><br>Test class: com.practice.test.OrangeHRMTests</td>
+<td></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -184,14 +207,168 @@ Session ID: 297f770e28a5d21549478943688e8f70
 </tr>
 <tr>
 <td title='com.practice.test.OrangeHRMTests.LoginLogoutTest()'><b>LoginLogoutTest</b><br>Test class: com.practice.test.OrangeHRMTests<br>Parameters: Admin, admin123</td>
-<td></td>
-<td>3</td>
-<td>com.practice.test.OrangeHRMTests@77847718</td></tr>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1708445876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1708445876'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+</pre></div></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.LoginLogoutTest()'><b>LoginLogoutTest</b><br>Test class: com.practice.test.OrangeHRMTests<br>Parameters: Admin2, admin456</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1490933064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1490933064'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+</pre></div></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
 <tr>
 <td title='com.practice.test.OrangeHRMTests.LoginLogoutTest()'><b>LoginLogoutTest</b><br>Test class: com.practice.test.OrangeHRMTests<br>Parameters: Admin, admin123</td>
-<td></td>
-<td>3</td>
-<td>com.practice.test.OrangeHRMTests@77847718</td></tr>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157815589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157815589'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+</pre></div></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
+<tr>
+<td title='com.practice.test.OrangeHRMTests.LoginLogoutTest()'><b>LoginLogoutTest</b><br>Test class: com.practice.test.OrangeHRMTests<br>Parameters: Admin2, admin456</td>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672369052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace672369052'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.practice.utils.JsonUtils
+	at com.practice.driver.Driver.initDriver(Driver.java:27)
+	at com.practice.test.BaseTest.setUp(BaseTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException [in thread &quot;TestNG-PoolService-1&quot;]
+	at com.practice.utils.JsonUtils.&lt;clinit&gt;(JsonUtils.java:33)
+	... 19 more
+</pre></div></td>
+<td>0</td>
+<td>com.practice.test.OrangeHRMTests@2b662a77</td></tr>
 </table><p>
 </body>
 </html>

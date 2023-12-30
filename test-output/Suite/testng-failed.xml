@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="LoginLogoutTest" invocation-numbers="1 3"/>
+          <include name="LoginLogoutTest"/>
         </methods>
       </class> <!-- com.practice.test.OrangeHRMTests -->
     </classes>

@@ -35,8 +35,11 @@ public final class PropertyUtils {
 			
 			//property.entrySet().forEach(entry -> CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
 		} 
-		catch (IOException e) {
-			e.printStackTrace();
+		catch (FileNotFoundException e) {
+			throw new RuntimeException();
+		}
+		catch(IOException e) {
+			throw new RuntimeException();
 		}
 		
 	}
@@ -45,6 +48,7 @@ public final class PropertyUtils {
 		
 		if (Objects.isNull(key)|| Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
 			throw new Exception("Property Name " + key + " is not found. Please check config.properties");
+			//throw new RunTimeException("Property Name " + key + " is not found. Please check config.properties");
 		}
 
 		return CONFIGMAP.get(key.name().toLowerCase());
