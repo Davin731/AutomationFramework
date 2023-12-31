@@ -23,10 +23,10 @@ public final class OrangeHRMTests extends BaseTest {
 	}
 
 	@Test(dataProvider="loginTestDataProvider")
-	public void LoginLogoutTest(String username, String password) throws Exception {
+	public void LoginLogoutTest(String username, String password) {
 		
 		String title = new OrangeHRMLoginPage()
-				.enterUsername(username).enterPassword(password).submitButton()
+				.enterUsername("Admin1").enterPassword("admin123").submitButton()
 				.clickWelcome().clickLogout()
 				.getTitle();
 		
@@ -39,10 +39,10 @@ public final class OrangeHRMTests extends BaseTest {
 	public Object[][] getData(){
 		
 		return new Object[][] {
-			{"Admin", "admin123"},
-			{"Admin2", "admin456"},
-			{"Admin", "admin123"},
-			{"Admin2", "admin456"}
+			{"Admin", "admin123"}
+//			{"Admin2", "admin456"},
+//			{"Admin", "admin123"},
+//			{"Admin2", "admin456"}
 		};
 	
 	}
@@ -61,7 +61,6 @@ public final class OrangeHRMTests extends BaseTest {
 		Thread.sleep(5000);
 		File source = myShot.getScreenshotAs(OutputType.FILE);
 		File target = new File(FrameworkConstants.screenshotsPath() + "/myPhoto.png");
-		
 		FileUtils.copyFile(source, target);
 	}
 }

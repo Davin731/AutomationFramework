@@ -11,7 +11,11 @@ import com.practice.constants.FrameworkConstants;
 import com.practice.driver.DriverManager;
 import com.practice.enums.WaitStrategy;
 
-public class ExplicitWaitFactory {
+public final class ExplicitWaitFactory {
+	
+	private ExplicitWaitFactory() {
+		
+	}
 
 	public static WebElement performExplicitWait(WaitStrategy waitStrategy, By by) {
 

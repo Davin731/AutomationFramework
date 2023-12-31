@@ -11,6 +11,8 @@ import java.util.Properties;
 
 import com.practice.constants.FrameworkConstants;
 import com.practice.enums.ConfigProperties;
+import com.practice.exceptions.InvalidPathForPropertyFileException;
+import com.practice.exceptions.PropertyFileUsageException;
 
 public final class PropertyUtils {
 
@@ -35,19 +37,16 @@ public final class PropertyUtils {
 			
 			//property.entrySet().forEach(entry -> CONFIGMAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
 		} 
-		catch (FileNotFoundException e) {
-			throw new RuntimeException();
+		catch (IOException e) {
+			e.printStackTrace();
+			System.exit(0);
 		}
-		catch(IOException e) {
-			throw new RuntimeException();
-		}
-		
 	}
 
-	public static String get(ConfigProperties key) throws Exception{
+	public static String get(ConfigProperties key) {
 		
 		if (Objects.isNull(key)|| Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
-			throw new Exception("Property Name " + key + " is not found. Please check config.properties");
+			throw new PropertyFileUsageException("Property Name " + key + " is not found. Please check config.properties");
 			//throw new RunTimeException("Property Name " + key + " is not found. Please check config.properties");
 		}
 

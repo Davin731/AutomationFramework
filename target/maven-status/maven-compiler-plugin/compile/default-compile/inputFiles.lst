@@ -1,2 +1,16 @@
 C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\driver\Driver.java
 C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\constants\FrameworkConstants.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\pages\BasePage.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\pages\OrangeHRMLoginPage.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\exceptions\FrameworkException.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\pages\OrangeHRMHomePage.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\exceptions\PropertyFileUsageException.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\enums\ConfigProperties.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\listeners\ListenerClass.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\exceptions\InvalidPathForPropertyFileException.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\utils\JsonUtils.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\driver\DriverManager.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\factories\ExplicitWaitFactory.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\exceptions\InvalidPathForFilesException.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\enums\WaitStrategy.java
+C:\Users\31dav\OneDrive\Documents\Automation\SeleniumAutomationFramework\src\main\java\com\practice\utils\PropertyUtils.java

@@ -18,7 +18,7 @@ public class JsonUtils {
 		
 	}
 	
-	private static Map<String, String> CONFIGMAP = new HashMap<>();
+	private static Map<String, String> CONFIGMAP = new HashMap<String, String>();
 
 	static {
 		

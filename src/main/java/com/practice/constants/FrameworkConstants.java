@@ -10,8 +10,8 @@ public final class FrameworkConstants {
 	
 	private static final String RESOURCESPATH = System.getProperty("user.dir") + "/src/test/resources";
 	private static final String CHROMEDRIVERPATH = RESOURCESPATH + "/executables/chromedriver.exe";
-	private static final String CONFIGFILEPATH = RESOURCESPATH + "/config/config1.properties";
-	private static final String JSONCONFIGFILEPATH = RESOURCESPATH + "/json/config1.json";
+	private static final String CONFIGFILEPATH = RESOURCESPATH + "/config/config.properties";
+	private static final String JSONCONFIGFILEPATH = RESOURCESPATH + "/json/config.json";
 	private static final String SCREENSHOTSPATH = RESOURCESPATH + "/screenshots";
 	private static final int EXPLICITWAIT = 10;
 
